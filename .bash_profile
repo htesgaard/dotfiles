@@ -112,9 +112,6 @@ if [ -f /usr/local/bin/rbenv ]; then
   eval "$(rbenv init -)"
 fi
 
-# Python settings.
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
-
 # Super useful Docker container oneshots.
 # Usage: dockrun, or dockrun [centos7|fedora24|debian8|ubuntu1404|etc.]
 dockrun() {
