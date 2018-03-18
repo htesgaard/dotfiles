@@ -39,6 +39,13 @@ then
   source ~/.bashrc
 fi
 
+# Enable virtualenvwrapper if present
+if hash virtualenvwrapper.sh 2>/dev/null; then
+    export WORKON_HOME=$HOME/.virtualenvs
+    export PROJECT_HOME=$HOME/Devel
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
 # Route local traffic over ethernet when using certain WiFi networks w/o proxy.
 function route_add() {
   sudo route add -net 10.0.0.0/8 -interface en0
