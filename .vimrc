@@ -50,3 +50,9 @@ inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
+" BEGIN ANSIBLE MANAGED BLOCK
+" check off a todo item and time stamp it
+map gg ^rx: <Esc>:r! date +" [\%H:\%M]"<ENTER>kJA<Esc>$
+" create a new todo item
+map gt o  _
+" END ANSIBLE MANAGED BLOCK
