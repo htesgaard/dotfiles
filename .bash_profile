@@ -189,3 +189,8 @@ fi
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pip completion --bash)"
+
+if [ -f ~/.sdkman/bin/sdkman-init.sh ]; then
+  source ~/.sdkman/bin/sdkman-init.sh;
+fi
+
