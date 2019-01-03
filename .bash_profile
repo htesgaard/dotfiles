@@ -5,6 +5,9 @@
 # @see .inputrc
 #
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 if hash powerline-shell 2>/dev/null; then
     # Use powerline-shell, if available
     function _update_ps1() {
