@@ -163,8 +163,8 @@ prod_command_trap () {
     fi
   fi
 }
-shopt -s extdebug
-trap prod_command_trap DEBUG
+# shopt -s extdebug
+# trap prod_command_trap DEBUG
 
 function blt() {
   if [ "`git rev-parse --show-cdup 2> /dev/null`" != "" ]; then
